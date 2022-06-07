@@ -14,7 +14,7 @@
 ** Display : Cybill
 */
 body {
-  background-image: url(./images/weatherBG.jpg);
+  background-image: url("./images/weatherBG.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -50,51 +50,47 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-.container {
-  font-size: 1.5rem;
-  font-weight: 100;
-  padding: 30px 70px;
-  color: #FBF3F2;
-}
-
-.current-info .others {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 3rem;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-}
-
-.date-container {
-  font-weight: 100;
-}
-
-.date-item {
-  font-size: 4rem;
-}
-
-.place-container {
-  text-align: end;
-  padding-right: 70px;
-  font-size: 1rem;
-  color: #FA991C;
-}
-
-.place-container time-zone {
-  font-weight: 100;
-  color: #FA991C;
-}
-
-.place-container time-zonecountry {
-  font-size: 0.5rem;
+@media screen and (min-width: 800px) {
+  .container {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 30px 70px;
+    color: #FBF3F2;
+  }
+  .current-info .others {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+  .date-container {
+    font-weight: 100;
+  }
+  .date-item {
+    font-size: 4rem;
+  }
+  .place-container {
+    text-align: end;
+    padding-right: 70px;
+    font-size: 1rem;
+    color: #FA991C;
+  }
+  .place-container time-zone {
+    font-weight: 100;
+    color: #FA991C;
+  }
+  .place-container time-zonecountry {
+    font-size: 0.5rem;
+  }
 }
 
 /*
