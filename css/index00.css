@@ -2,8 +2,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif, Arial, Helvetica;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif, Arial, Helvetica;
 }
 
 /* 
@@ -13,7 +14,7 @@
 ** Display : Cybill
 */
 body {
-  background-image: url(./images/weatherBG.jpg);
+  background-image: url(../images/weatherBG.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -28,7 +29,7 @@ body {
   margin: 2rem;
 }
 
-input[type=text] {
+input[type="text"] {
   height: 2.6rem;
   width: 20rem;
   background-color: #FBF3F2;
@@ -38,7 +39,7 @@ input[type=text] {
   border-radius: 5px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   height: 2.6rem;
   width: 6rem;
   background-color: #032539;
@@ -57,8 +58,13 @@ input[type=submit] {
 }
 
 .current-info .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 3rem;
   border: none;
   border-radius: 5px;
@@ -81,14 +87,17 @@ input[type=submit] {
   font-size: 1rem;
   color: #FA991C;
 }
+
 .place-container time-zone {
   font-weight: 100;
   color: #FA991C;
 }
+
 .place-container time-zonecountry {
   font-size: 0.5rem;
 }
 
 /*
 ** Daily Forecast 5 days + 3hrs range : Misato
-*//*# sourceMappingURL=index.css.map */
+*/
+/*# sourceMappingURL=index.css.map */
