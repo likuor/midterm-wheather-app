@@ -1,6 +1,7 @@
 // import config from '../apikey.js';
 // const WEATHER_API_KEY = config.wheatherApi;
 console.log(WEATHER_API_KEY);
+console.log(process.env.WEATHER_API_KEY);
 
 let data;
 let weatherInfo = {
