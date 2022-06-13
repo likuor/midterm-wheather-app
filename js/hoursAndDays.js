@@ -1,6 +1,5 @@
-import config from '../apikey.js';
-const WEATHER_API_KEY = config.wheatherApi;
-
+// import config from '../apikey.js';
+// const WEATHER_API_KEY = config.wheatherApi;
 let data;
 let weatherInfo = {
   myKey: WEATHER_API_KEY,
