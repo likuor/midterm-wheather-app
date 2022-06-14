@@ -1,4 +1,4 @@
-// import config from '../apikey.js';
+import config from '../apikey.js';
 
 import { getFavoriteStatus } from './getFavoriteStatus.js';
 import { addFavoriteCities } from './addFavoriteCities.js';
@@ -6,8 +6,7 @@ import { weatherInfo } from './hoursAndDays.js';
 import { showDropdown } from './showDropdown.js';
 import { showDefault } from './currentWheather.js';
 
-console.log(WEATHER_API_KEY);
-// const WEATHER_API_KEY = config.wheatherApi;
+const WEATHER_API_KEY = config.wheatherApi;
 const btn = document.getElementsByClassName('btn')[0];
 let searchedCity = 'Vancouver';
 let favoriteCityItems = document.querySelector('[name="favoriteCities"]');
