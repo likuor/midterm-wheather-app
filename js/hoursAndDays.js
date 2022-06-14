@@ -17,7 +17,7 @@ let weatherInfo = {
   },
   getData: async function (city) {
     const res = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${this.myKey}`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${this.myKey}`
     );
     const data = await res.json();
 
@@ -43,7 +43,7 @@ let weatherInfo = {
       let day = this.datemodifiyer(list[i].dt_txt)[0];
       let time = this.datemodifiyer(list[i].dt_txt)[1];
       let icon = list[i].weather[0].icon;
-      let iconImg = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+      let iconImg = `https://openweathermap.org/img/wn/${icon}@2x.png`;
       let temp = list[i].main.temp;
       let innerItem = this.innerContent(day, time, iconImg, temp);
       let li = document.createElement('li');
@@ -79,7 +79,7 @@ let weatherInfo = {
     for (let i = 0; i < list.length; i++) {
       let day = this.datemodifiyer(list[i].dt_txt)[0];
       let icon = list[i].weather[0].icon;
-      let iconImg = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+      let iconImg = `https://openweathermap.org/img/wn/${icon}@2x.png`;
       let temp = list[i].main.temp;
       let minTemp = list[i].main.temp_min;
       let maxTemp = list[i].main.temp_max;
